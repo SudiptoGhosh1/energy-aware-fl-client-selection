@@ -101,10 +101,7 @@ The single-round version is a **Budgeted Maximum Coverage** problem (NP-hard, su
 │   ├── fig_fl.png              # Coverage–accuracy scatter (FedAvg link)
 │   └── fig_single.png          # Single-round greedy ratio distributions
 │
-├── research_paper.pdf          # Full research paper
-├── research_paper.docx         # Research paper (editable)
-├── project_guide.docx          # Project specification & guidance
-└── code_listings.docx          # Annotated code listings
+└── research_paper.docx         # Research paper manuscript
 ```
 
 ---
@@ -329,14 +326,11 @@ Validates that data-group coverage is a proxy for FL model accuracy. Runs FedAvg
 
 ---
 
-## 📄 Research Paper & Documents
+## 📄 Research Paper
 
 | File | Description |
 |------|-------------|
-| `research_paper.pdf` | Full research paper (problem formulation, algorithms, proofs, experiments, conclusions) |
-| `research_paper.docx` | Editable version of the research paper |
-| `project_guide.docx` | Project specification and guidance document |
-| `code_listings.docx` | Annotated source code listings |
+| `research_paper.docx` | Full research paper manuscript (problem formulation, algorithms, proofs, experiments, conclusions) |
 
 ---
 
