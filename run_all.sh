@@ -10,4 +10,3 @@ python3 run_e7_fedavg.py
 python3 run_e3_large.py              # slow: rolling ILP, ~10 min
 python3 make_figures.py
 python3 make_figures_col.py
-python3 export_numbers.py

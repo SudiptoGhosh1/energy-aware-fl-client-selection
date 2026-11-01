@@ -79,7 +79,6 @@ The single-round version is a **Budgeted Maximum Coverage** problem (NP-hard, su
 │
 ├── make_figures.py             # Figure generation (300 dpi PNG)
 ├── make_figures_col.py         # Colour-variant figures
-├── export_numbers.py           # Collect all numbers → results/numbers.json
 ├── run_all.sh                  # Reproduce all results end-to-end (~25–30 min)
 ├── requirements.txt            # Python dependencies
 │
@@ -148,7 +147,7 @@ python3 run_e6_fairness.py          # ~1 minute
 python3 run_e7_fedavg.py            # ~2 minutes
 python3 run_e3_large.py             # ~10 minutes (rolling ILP)
 python3 make_figures.py             # < 10 seconds
-python3 export_numbers.py           # < 1 second
+python3 make_figures_col.py         # < 10 seconds
 ```
 
 ---
