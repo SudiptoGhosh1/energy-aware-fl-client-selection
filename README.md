@@ -1,7 +1,6 @@
 <h1 align="center">Energy-Aware Client Selection in Federated Learning</h1>
 
 <p align="center">
-  <b>PS-7 · Advanced Algorithms · RGIPT · AY 2026–27</b><br/>
   <i>Budgeted Maximum Coverage meets battery-constrained Federated Learning</i>
 </p>
 
@@ -13,7 +12,7 @@
 
 ## 📌 Overview
 
-This repository contains the **complete implementation, experimental suite, and figures** for Problem Set 7 (PS-7) of the Advanced Algorithms course at RGIPT, Academic Year 2026–27.
+This repository contains the **complete implementation, experimental suite, and figures** for a research project on energy-aware client selection in Federated Learning.
 
 We study the **Energy-Aware Client Selection** problem in Federated Learning (FL): given a pool of heterogeneous edge devices (clients) that each hold subsets of training data (groups), a per-round energy budget, per-client battery dynamics, and a deadline constraint, **select which clients participate in each FL round** so as to maximise the total weighted data-group coverage across all rounds.
 
@@ -103,9 +102,10 @@ The single-round version is a **Budgeted Maximum Coverage** problem (NP-hard, su
 │   ├── fig_fl.png              # Coverage–accuracy scatter (FedAvg link)
 │   └── fig_single.png          # Single-round greedy ratio distributions
 │
-├── PS7_Research_Paper.pdf      # Full research paper
-├── PS7_Project_Guide.docx      # Project specification
-└── PS7_Code_Listings.docx      # Annotated code listings
+├── research_paper.pdf          # Full research paper
+├── research_paper.docx         # Research paper (editable)
+├── project_guide.docx          # Project specification & guidance
+└── code_listings.docx          # Annotated code listings
 ```
 
 ---
@@ -252,7 +252,7 @@ Rolling ILP is provably optimal on these instances. The adversarial ratio tracks
 
 ### E6 · Fairness Constraints
 
-Adds a minimum-participation constraint (ρ-fairness) to the multi-round ILP. Results on 8 small instances:
+Adds a minimum-participation constraint (ρ-fairness) to the multi-round ILP. Results on 8 instances:
 
 | ρ (min participation fraction) | Feasible | Mean objective | Coverage loss |
 |--------------------------------|----------|----------------|---------------|
@@ -330,14 +330,14 @@ Validates that data-group coverage is a proxy for FL model accuracy. Runs FedAvg
 
 ---
 
-## 📄 Research Paper
+## 📄 Research Paper & Documents
 
-The accompanying research paper is available in this repository:
-- **`PS7_Research_Paper.pdf`** — Full paper (problem formulation, algorithms, proofs, experiments, conclusions)
-
-Related documents:
-- `PS7_Project_Guide.docx` — Project specification and guidance
-- `PS7_Code_Listings.docx` — Annotated code listings
+| File | Description |
+|------|-------------|
+| `research_paper.pdf` | Full research paper (problem formulation, algorithms, proofs, experiments, conclusions) |
+| `research_paper.docx` | Editable version of the research paper |
+| `project_guide.docx` | Project specification and guidance document |
+| `code_listings.docx` | Annotated source code listings |
 
 ---
 
@@ -388,17 +388,6 @@ check(inst, X, fairness_rho=0.0) -> (feasible: bool, objective: float, messages:
 ```python
 run_fedavg(inst, X_sel, data, seed=0) -> List[float]  # accuracy per round
 ```
-
----
-
-## 🏫 Course Information
-
-| Field | Detail |
-|-------|--------|
-| **Institution** | Rajiv Gandhi Institute of Petroleum Technology (RGIPT) |
-| **Course** | Advanced Algorithms (AY 2026–27) |
-| **Problem Set** | PS-7: Energy-Aware Client Selection in Federated Learning |
-| **Topic** | Budgeted Maximum Coverage · ILP · Greedy Approximation · Battery-Constrained FL |
 
 ---
 
