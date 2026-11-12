@@ -5,8 +5,41 @@
 </p>
 
 <p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"/></a>
+  <img src="https://img.shields.io/badge/Python-3.9%2B-brightgreen.svg" alt="Python 3.9+"/>
+  <img src="https://img.shields.io/badge/Federated%20Learning-Energy--Aware-orange.svg" alt="Federated Learning"/>
+</p>
+
+<p align="center">
   <img src="figures/fig_compare.png" width="700" alt="Algorithm comparison — small vs large instances"/>
 </p>
+
+---
+
+## 👥 Authors & Contributors
+
+This research project and codebase is jointly developed and maintained by:
+
+- **Khagesh Ranjan** ([@khageshranjan23-pixel](https://github.com/khageshranjan23-pixel)) — Core algorithm enhancements, packaging, CLI tooling, test suites & CI/CD.
+- **Sudipto Ghosh** ([@SudiptoGhosh1](https://github.com/SudiptoGhosh1)) — Mathematical formulation, ILP solver, policy implementations & research paper.
+
+---
+
+## ⚡ Quickstart & Installation
+
+Install the package directly in editable mode:
+
+```bash
+git clone https://github.com/SudiptoGhosh1/energy-aware-fl-client-selection.git
+cd energy-aware-fl-client-selection
+pip install -e .
+```
+
+Run a simulation using the built-in CLI:
+
+```bash
+flsel --clients 40 --groups 20 --rounds 10 --policy battery_aware
+```
 
 ---
 
@@ -380,6 +413,21 @@ check(inst, X, fairness_rho=0.0) -> (feasible: bool, objective: float, messages:
 ### `flsel.fedavg`
 ```python
 run_fedavg(inst, X_sel, data, seed=0) -> List[float]  # accuracy per round
+```
+
+---
+
+## 📜 Citation
+
+If you use this repository or research work, please cite:
+
+```bibtex
+@misc{ranjan_ghosh_2026_energy_fl,
+  author = {Ranjan, Khagesh and Ghosh, Sudipto},
+  title = {Energy-Aware Client Selection in Federated Learning as Multi-Round Budgeted Maximum Coverage},
+  year = {2026},
+  url = {https://github.com/SudiptoGhosh1/energy-aware-fl-client-selection}
+}
 ```
 
 ---

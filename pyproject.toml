@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flsel"
+version = "0.2.0"
+description = "Energy-Aware Client Selection in Federated Learning"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Khagesh Ranjan"},
+    {name = "Sudipto Ghosh"}
+]
+keywords = ["federated-learning", "client-selection", "integer-programming", "optimization"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.9",
+    "pandas>=1.3",
+    "matplotlib>=3.4",
+    "scikit-learn>=1.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0"
+]
+
+[project.scripts]
+flsel = "flsel.cli:main"

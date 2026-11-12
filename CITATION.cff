@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+authors:
+  - family-names: "Ranjan"
+    given-names: "Khagesh"
+  - family-names: "Ghosh"
+    given-names: "Sudipto"
+title: "Energy-Aware Client Selection in Federated Learning"
+version: 0.2.0
+date-released: 2026-11-13
+url: "https://github.com/SudiptoGhosh1/energy-aware-fl-client-selection"
