@@ -33,13 +33,29 @@ Install the package directly in editable mode:
 ```bash
 git clone https://github.com/SudiptoGhosh1/energy-aware-fl-client-selection.git
 cd energy-aware-fl-client-selection
-pip install -e .
+pip install -e ".[dev]"
 ```
 
-Run a simulation using the built-in CLI:
+### 1. Interactive Tutorial Notebook
+Explore the interactive Jupyter notebook at [`notebooks/quickstart_tutorial.ipynb`](notebooks/quickstart_tutorial.ipynb) to visualize battery dynamics, policy comparisons, and independent feasibility checking step-by-step.
 
+### 2. Command-Line Interface (CLI)
+
+Benchmark all policies side-by-side with formatted metrics:
 ```bash
-flsel --clients 40 --groups 20 --rounds 10 --policy battery_aware
+flsel compare --clients 40 --groups 20 --rounds 10
+```
+
+Run a specific policy with custom parameters or JSON output:
+```bash
+flsel run --policy battery_aware --gamma 1.5 --json
+```
+
+### 3. Run the Test Suite
+
+Verify all algorithmic constraints and unit tests:
+```bash
+python -m unittest discover tests -v
 ```
 
 ---
