@@ -22,7 +22,7 @@ This research project and codebase is jointly developed and maintained by:
 
 - **Khagesh Ranjan** ([@khageshranjan23-pixel](https://github.com/khageshranjan23-pixel)) — Core algorithm enhancements, packaging, CLI tooling, test suites & CI/CD.
 - **Sudipto Ghosh** ([@SudiptoGhosh1](https://github.com/SudiptoGhosh1)) — Mathematical formulation, ILP solver, policy implementations & research paper.
-- **Shivansh Tripathi** ([@shivanshtripathi21](https://github.com/shivanshtripathi21)) – Experimental evaluation, performance analysis, result visualization, literature review, and project documentation.
+- **Shivanshu Tripathi** ([@shivanshtripathi21](https://github.com/shivanshtripathi21)) – Experimental evaluation, performance analysis, result visualization, literature review, and project documentation.
 
 ---
 
